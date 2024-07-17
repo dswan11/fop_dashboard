@@ -10,8 +10,8 @@ data2 =pd.read_csv('merged_data.csv')
 
 
     # Streamlit app
-st.title("FOP Analysis Dashboard")
-st.write("This page displays data from a lesson.")
+st.title("FOP Analysis Dashboard V2")
+st.write("This page displays data from a learnign session.")
 
 # Create three columns for the pie charts
 col1, col2, col3 = st.columns(3)
