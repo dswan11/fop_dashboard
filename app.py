@@ -4,14 +4,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Load data
-data = pd.read_csv('16Jul_Results.csv')
+data = pd.read_csv('pp_st_17Jul.csv')
 
-data2 =pd.read_csv('merged_data.csv')
+data2 = pd.read_csv('merged_data.csv')
 
 
-    # Streamlit app
+# Streamlit app
 st.title("FOP Analysis Dashboard V2")
-st.write("This page displays data from a learnign session.")
+st.write("This page displays data from a learning session.")
 
 # Create three columns for the pie charts
 col1, col2, col3 = st.columns(3)
@@ -23,7 +23,7 @@ fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
     r=data['Score'],
     theta=data['Parameter'],
-    fill='toself'
+    fill='toself',
 ))
 
 fig.update_layout(
@@ -32,24 +32,20 @@ fig.update_layout(
             visible=True,
             range=[0, 10]
         )),
-    showlegend=False
+    showlegend=False,
+    title="Learning Environment Analysis"
 )
 
 # Streamlit app
 #st.title("Radar Chart Example")
 #st.write("This radar chart visualizes the data points from the CSV file.")
-
-
-
 #st.plotly_chart(fig)
 
 # Create the first pie chart
 fig1 = px.pie(data2, names='speaker', values='wait_time', title='Wait Time')
 
-    # Create the second pie chart
+# Create the second pie chart
 fig2 = px.pie(data2, names='speaker', values='t_duration', title='Speaking duration')
-
-
 
 col1.plotly_chart(fig)
 col2.plotly_chart(fig1)
@@ -60,3 +56,13 @@ col3.plotly_chart(fig2)
 
 # Display the second pie chart
 #st.plotly_chart(fig2)
+
+
+
+display_data = ["Parameter", "Score", "Explanation"]
+data_to_display = data[display_data]
+final_data = data_to_display.reset_index(drop=True)
+st.write("Explanation from ChatGPT:")
+#st.dataframe(final_data)
+
+st.table(final_data)
