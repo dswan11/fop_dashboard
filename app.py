@@ -2,11 +2,16 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import openai
+
+st.sidebar.title("Upload CSV Files")
+uploaded_file1 = st.sidebar.file_uploader("Upload the Learning Environment File", type="csv", key="file1")
+uploaded_file2 = st.sidebar.file_uploader("Upload the Timing Data File", type="csv", key="file2")
 
 # Load data
-data = pd.read_csv('pp_st_17Jul.csv')
+data = pd.read_csv(uploaded_file1)
 
-data2 = pd.read_csv('merged_data.csv')
+data2 = pd.read_csv(uploaded_file2)
 
 
 # Streamlit app
