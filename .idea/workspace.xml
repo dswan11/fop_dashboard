@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5c48c4d-85e0-486c-9283-dbd53cf7d68c" name="Changes" comment="Small update">
-      <change afterPath="$PROJECT_DIR$/CU7_13Jul.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CU7_13Jul_4o.csv" afterDir="false" />
+    <list default="true" id="f5c48c4d-85e0-486c-9283-dbd53cf7d68c" name="Changes" comment="Adding sidebar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,13 +123,22 @@
       <option name="project" value="LOCAL" />
       <updated>1721210266593</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding sidebar">
+      <option name="closed" value="true" />
+      <created>1721222445282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721222445282</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Small update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small update" />
+    <MESSAGE value="Adding sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding sidebar" />
   </component>
 </project>
